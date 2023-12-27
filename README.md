@@ -17,5 +17,5 @@ openssl req -new -x509 -nodes -sha256 -key ca.key -days 3650 -subj "/C=TR/CN=exa
 # Usage
 
 1. Download the project `git clone git@github.com:meirzamoodle/middleware-tutorials-redis-cluster-tls.git`
-2. `cd midlleware-tutorials-redis-cluster-tls` 
-3. `docker-compose up -d`
+2. `cd middleware-tutorials-redis-cluster-tls` 
+3. `docker-compose up --build`
