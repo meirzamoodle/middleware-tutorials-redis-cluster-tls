@@ -19,3 +19,14 @@ openssl req -new -x509 -nodes -sha256 -key ca.key -days 3650 -subj "/C=TR/CN=exa
 1. Download the project `git clone git@github.com:meirzamoodle/middleware-tutorials-redis-cluster-tls.git`
 2. `cd middleware-tutorials-redis-cluster-tls` 
 3. `docker-compose up --build`
+
+# Troubleshooting
+## Network middleware-tutorials-redis-cluster-tls_app_net  Error
+Prune the network with: `docker network prune`
+
+## Error response from daemon: network not found
+Build the container with: `docker compose up --build --force-recreate --renew-anon-volumes`
+
+
+
+
